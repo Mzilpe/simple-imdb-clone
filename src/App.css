@@ -1,0 +1,10 @@
+.App {
+	text-align: center;
+	position: relative;
+	display: flex;
+	font-family: "Ubuntu", sans-serif;
+}
+
+.main-container {
+	width: 80%;
+}

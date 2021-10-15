@@ -1,0 +1,77 @@
+.headerSection {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: rgb(30, 41, 59);
+	position: sticky;
+	top: 0;
+	height: 4rem;
+}
+
+h1 {
+	color: white;
+}
+
+.navSection {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	color: #0ea5e9;
+	text-transform: uppercase;
+}
+
+.navLinks {
+	text-decoration: none;
+	color: #0ea5e9;
+}
+.navSection > .navLinks:hover {
+	opacity: 0.6;
+	color: #979ca1;
+}
+
+.activeLink {
+	color: #fff;
+}
+
+/*Search /*/
+.searchContainer {
+	position: relative;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.searchBar {
+	padding: 0.5rem 2.5rem;
+	background: rgb(30, 41, 59);
+	border-width: 0px 0px 2px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(51, 65, 85);
+	color: rgb(248, 250, 252);
+}
+
+.searchSpan {
+	position: absolute;
+	top: 0px;
+	bottom: 5px;
+	left: 0px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	padding-left: 0.5rem;
+	cursor: pointer;
+}
+
+.searchLabel {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0px, 0px, 0px, 0px);
+	white-space: nowrap;
+	border-width: 0px;
+}

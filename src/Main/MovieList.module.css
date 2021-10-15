@@ -1,0 +1,8 @@
+.moviesSection {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0px, 1fr));
+	gap: 2rem;
+	padding: 1rem;
+	background: rgb(30, 41, 59);
+	overflow: -moz-hidden-unscrollable;
+}
