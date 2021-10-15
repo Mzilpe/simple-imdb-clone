@@ -1,11 +1,10 @@
 import axios from "axios";
-import React from "react";
-
+import React, { Fragment, useState } from "react";
 import { GENRE } from "../Global/genre";
 import { YEARS } from "../Global/years";
 import { STARS } from "../Global/stars";
 import classes from "./Filter.module.css";
-import { Fragment, useState } from "react/cjs/react.development";
+
 import SpinnerModal from "../Modal/SpinnerModal";
 
 const Filter = (props) => {
