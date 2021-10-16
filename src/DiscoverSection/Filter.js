@@ -4,7 +4,6 @@ import { GENRE } from "../Global/genre";
 import { YEARS } from "../Global/years";
 import { STARS } from "../Global/stars";
 import classes from "./Filter.module.css";
-
 import SpinnerModal from "../Modal/SpinnerModal";
 
 const Filter = (props) => {

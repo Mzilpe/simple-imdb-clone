@@ -58,8 +58,9 @@
 
 .star {
 	width: 1.75rem;
-	opacity: 50%;
+	opacity: 80%;
 	cursor: pointer;
+	z-index: 50;
 }
 
 .starContainer:hover img {
