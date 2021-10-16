@@ -10,10 +10,11 @@ const Backdrop = (props) => {
 const Modal = (props) => {
 	return (
 		<div className='product-modal'>
-			<div class='lds-ripple'>
+			<div className='loader'></div>
+			{/* <div className='lds-ripple'>
 				<div></div>
 				<div></div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

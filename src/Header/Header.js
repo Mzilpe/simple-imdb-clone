@@ -6,7 +6,7 @@ import classes from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
-	const { setSortBy, movieList, showTVSeries } = props;
+	const { setSortBy, movieList, showTVSeries, setNoDataFound } = props;
 
 	const selectSortBy = (val) => {
 		setSortBy(val);
@@ -18,16 +18,21 @@ const Header = (props) => {
 			? `https://api.themoviedb.org/3/search/tv?api_key=3a94078fb34b772a31d9a1348035bed7&language=en-US&query=${keyword}&page=1&include_adult=false`
 			: `https://api.themoviedb.org/3/search/movie?api_key=3a94078fb34b772a31d9a1348035bed7&language=en-US&query=${keyword}&page=1&include_adult=false`;
 		axios(url).then((res) => {
+			if (res.data.results.length === 0) {
+				setNoDataFound(true);
+			}
 			movieList(res.data.results);
 		});
 	};
 
 	const trendingData = () => {
-		console.log("trend");
 		const url = showTVSeries
 			? "https://api.themoviedb.org/3/trending/tv/week?api_key=3a94078fb34b772a31d9a1348035bed7"
 			: "https://api.themoviedb.org/3/trending/movie/week?api_key=3a94078fb34b772a31d9a1348035bed7";
 		axios(url).then((res) => {
+			if (res.data.results.length === 0) {
+				setNoDataFound(true);
+			}
 			movieList(res.data.results);
 		});
 	};
@@ -35,7 +40,7 @@ const Header = (props) => {
 	return (
 		<BrowserRouter>
 			<div className={classes.headerSection}>
-				<h1>Discover</h1>
+				<h1 className={classes.discover}>Discover</h1>
 				<nav className={classes.navSection}>
 					{DISCOVER_TYPES.map((val) => (
 						<NavLink

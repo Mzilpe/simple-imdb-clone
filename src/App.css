@@ -8,3 +8,9 @@
 .main-container {
 	width: 80%;
 }
+
+@media screen and (max-width: 500px) {
+	.main-container {
+		width: 100%;
+	}
+}

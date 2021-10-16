@@ -10,7 +10,13 @@ import SpinnerModal from "../Modal/SpinnerModal";
 const Filter = (props) => {
 	const [showLoader, setShowLoader] = useState(false);
 	const [startDate, setStartDate] = useState("2000-01-01");
-	const { setshowTVSeries, showTVSeries, setMovieList, sortBy } = props;
+	const {
+		setshowTVSeries,
+		showTVSeries,
+		setMovieList,
+		sortBy,
+		setNoDataFound,
+	} = props;
 
 	const onChangeHandler = (event) => {
 		event.target.value === "M" ? setshowTVSeries(false) : setshowTVSeries(true);
@@ -22,7 +28,12 @@ const Filter = (props) => {
 		const url = showTVSeries
 			? `https://api.themoviedb.org/3/discover/tv?api_key=3a94078fb34b772a31d9a1348035bed7&language=en-US&sort_by=${sortBy}&include_adult=false&include_video=false&page=1&with_genres=${genreId}&with_watch_monetization_types=flatrate`
 			: `https://api.themoviedb.org/3/discover/movie?api_key=3a94078fb34b772a31d9a1348035bed7&language=en-US&sort_by=${sortBy}&include_adult=false&include_video=false&page=1&with_genres=${genreId}&with_watch_monetization_types=flatrate`;
-		axios(url).then((res) => setMovieList(res.data.results));
+		axios(url).then((res) => {
+			if (res.data.results.length === 0) {
+				setNoDataFound(true);
+			}
+			setMovieList(res.data.results);
+		});
 		setShowLoader(false);
 	};
 

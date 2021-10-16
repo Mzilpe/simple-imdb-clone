@@ -4,7 +4,7 @@ export const DISCOVER_TYPES = [
 		name: "Popular",
 	},
 	{
-		id: "primary_release_date.desc",
+		id: "release_date.desc",
 		name: "Newest",
 	},
 	{

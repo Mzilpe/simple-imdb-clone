@@ -1,0 +1,14 @@
+.noDataSection {
+	height: 90vh;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f7f7f7;
+}
+
+.data {
+	color: rgb(35, 41, 56);
+	font-weight: bold;
+	font-size: x-large;
+}

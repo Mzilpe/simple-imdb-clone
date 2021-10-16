@@ -5,10 +5,12 @@
 	background: rgb(30, 41, 59);
 	position: sticky;
 	top: 0;
-	height: 4rem;
+	min-height: 4rem;
+	z-index: 20;
+	box-shadow: 0px 5px 10px 0px rgba(30, 41, 59, 0.75);
 }
 
-h1 {
+.discover {
 	color: white;
 }
 
@@ -74,4 +76,21 @@ h1 {
 	clip: rect(0px, 0px, 0px, 0px);
 	white-space: nowrap;
 	border-width: 0px;
+}
+
+@media screen and (max-width: 900px) {
+	.headerSection {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.discover {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.navSection {
+		/* flex-direction: column; */
+		gap: 0.75rem;
+	}
 }
