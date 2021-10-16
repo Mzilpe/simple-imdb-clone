@@ -64,7 +64,7 @@ const Filter = (props) => {
 		<Fragment>
 			{showLoader && <SpinnerModal />}
 			<aside className={classes.filterSection}>
-				<h1>Discover Options</h1>
+				<h1 className={classes.discover}>Discover Options</h1>
 				<form className={classes.formSection}>
 					<label className={classes.filterLabel}>TYPE</label>
 					<select
