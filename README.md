@@ -1,3 +1,22 @@
+# This project is based on assignment given by Goodera
+A simple IMDB clone. The project is hoisted on github.
+Details are as below :
+### Hosted Link  
+      - https://mzilpe.github.io/simple-imdb-clone/
+### Git-Hub Repo Link 
+      - https://github.com/Mzilpe/simple-imdb-clone
+
+## Details to run the manually on local system:-
+    Clone the repo from repo link - https://github.com/Mzilpe/simple-imdb-clone.git
+    Open the local repo in cmd and run "npm install"
+    Run "npm start"
+    Open the browser "http://localhost:3000"
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
