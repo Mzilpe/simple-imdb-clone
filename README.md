@@ -3,6 +3,9 @@ A simple IMDB clone. The project is hoisted on github.
 Details are as below :
 ### Hosted Link  
       - https://mzilpe.github.io/simple-imdb-clone/
+      
+      ##### Note: Rating stars not visible in deployed link
+      
 ### Git-Hub Repo Link 
       - https://github.com/Mzilpe/simple-imdb-clone
 
