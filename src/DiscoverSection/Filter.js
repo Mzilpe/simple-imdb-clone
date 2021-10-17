@@ -124,7 +124,7 @@ const Filter = (props) => {
 								// 	onClick={() => starClickHandler(star.value)}
 								// />
 								<span
-									kay={star.id}
+									key={star.id}
 									className={classes.star}
 									onClick={() => starClickHandler(star.value)}
 								>
