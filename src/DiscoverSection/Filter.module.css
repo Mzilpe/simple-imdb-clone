@@ -53,25 +53,28 @@
 
 .starContainer {
 	display: flex;
-	gap: 0.5rem;
+	gap: 0.25rem;
 }
 
 .star {
-	width: 1.75rem;
+	font-size: 2rem;
+	/* width: 1.75rem; */
+	font-weight: bold;
 	opacity: 80%;
 	cursor: pointer;
 	z-index: 50;
+	color: yellow;
 }
 
-.starContainer:hover img {
+.starContainer:hover .star {
 	opacity: 100%;
 }
 
-.starContainer img:hover {
+.starContainer .star:hover {
 	opacity: 100%;
 }
 
-.starContainer img:hover ~ img {
+.starContainer .star:hover ~ .star {
 	opacity: 50%;
 }
 

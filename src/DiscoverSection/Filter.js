@@ -116,13 +116,20 @@ const Filter = (props) => {
 						<label className={classes.filterLabel}>Ratings</label>
 						<span className={classes.starContainer}>
 							{STARS.map((star) => (
-								<img
-									key={star.id}
+								// <img
+								// 	key={star.id}
+								// 	className={classes.star}
+								// 	src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/star_2b50.png'
+								// 	alt='rating star'
+								// 	onClick={() => starClickHandler(star.value)}
+								// />
+								<span
+									kay={star.id}
 									className={classes.star}
-									src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/star_2b50.png'
-									alt='rating star'
 									onClick={() => starClickHandler(star.value)}
-								/>
+								>
+									★
+								</span>
 							))}
 						</span>
 					</section>
