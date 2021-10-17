@@ -54,6 +54,7 @@
 .starContainer {
 	display: flex;
 	gap: 0.25rem;
+	z-index: 48;
 }
 
 .star {
